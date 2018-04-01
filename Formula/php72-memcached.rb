@@ -18,8 +18,8 @@ class Php72Memcached < AbstractPhp72Extension
   option "with-sasl", "Build with sasl support"
 
   depends_on "pkg-config" => :build
-  depends_on "php72-igbinary"
-  depends_on "igbinary" => :build
+  depends_on "jaredloman/php/php72-igbinary"
+  depends_on "jaredloman/php/igbinary" => :build
   depends_on "libmemcached"
 
   def install
