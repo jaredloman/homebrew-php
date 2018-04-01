@@ -15,7 +15,7 @@ class Php72Igbinary < AbstractPhp72Extension
     sha256 "d47654558cc75c48f3015909708ee30cee4c0eaa29bcb5c1a3ce5de75c3b6f24" => :el_capitan
   end
 
-  depends_on "igbinary" => :build
+  depends_on "jaredloman/php/igbinary" => :build
 
   def install
     safe_phpize
